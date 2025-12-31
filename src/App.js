@@ -342,7 +342,7 @@ function MovieDetails({
       }
       getRatings();
     },
-    [selectedId]
+    [selectedId, watched]
   );
 
   const {
@@ -402,7 +402,7 @@ function MovieDetails({
             <div className="details-overview">
               <h2>{title}</h2>
               <p>
-                {released}•{runtime}
+                {released} • {runtime}
               </p>
               <p>{genre}</p>
               <p>
